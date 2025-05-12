@@ -18,7 +18,7 @@ async function getChefBirthday(id) {
     try{
     const chefResponse = await fetch(`https://dummyjson.com/users/${recipe.userId}`);
     chef = await chefResponse.json();
-    }catch(error){
+    } catch(error){
         throw new error (`non riesco a recperare lo chef ${id}`)
 
     }  
